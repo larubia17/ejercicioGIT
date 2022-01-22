@@ -1,1 +1,2 @@
 # ejercicioGit
+Sarah Weber

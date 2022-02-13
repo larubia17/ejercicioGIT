@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang"en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ordenamiento</title>
+</head>
+<body>
+<script>
+// Ordenamiento
+function unacadena(array)
+{
+    if(array.length < 1)
+    {
+        return[];
+    }
+var left = [];
+var right =[];
+var pivot = array[0];
+
+    for (var i=1; i<array.length; i++) 
+    {
+        if (array[i]<pivot)
+         {
+        left.push(array[i]);
+        }
+        else
+        {
+        right.push(array[i]);
+        }
+    }
+    return [].concat(unacadena(left), pivot, unacadena(right));
+}
+
+console.log(unacadena([3, 9, 1, 10, 500, 1, 10,])); //[1,3,9,10,10,500]
+
+//Sarah Weber
+</script>
+</body>
+</html>
